@@ -1,0 +1,17 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+  }
+
+    :root {
+        --color-50: #B2349D;
+        --color-100: #7D2484;
+        --color-200: #B23474;
+        --color-300: #6C34BF;
+        --color-400: #4B2486;
+        background-image: linear-gradient(75deg, #B2349D, #6C34BF, #B23474);
+    }
+
+    #textColor {
+        color: var(--chakra-colors-white)
+    }
