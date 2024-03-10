@@ -4,14 +4,18 @@ html, body, #root {
   }
 
     :root {
-        --color-50: #B2349D;
-        --color-100: #7D2484;
-        --color-200: #B23474;
-        --color-300: #6C34BF;
-        --color-400: #4B2486;
-        background-image: linear-gradient(75deg, #B2349D, #6C34BF, #B23474);
+        --color-50: #a22a7b;
+        --color-100: #c5c9df;
+        --color-200: #7647a3;
+        --color-300: #ba5681;
+        --color-400: #d46477;
+        background-image: linear-gradient(-45deg, var(--chakra-colors-pink-500), var(--chakra-colors-purple-500), var(--chakra-colors-pink-400));
     }
 
     #textColor {
         color: var(--chakra-colors-white)
+    }
+
+    Card {
+        background-color: var(--chakra-colors-blackAlpha-300);
     }
