@@ -15,7 +15,3 @@ html, body, #root {
     #textColor {
         color: var(--chakra-colors-white)
     }
-
-    Card {
-        background-color: var(--chakra-colors-blackAlpha-300);
-    }

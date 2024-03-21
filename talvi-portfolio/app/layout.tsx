@@ -1,13 +1,7 @@
-
+"use client"
 import "./globals.css";
 import { Providers } from "./providers";
 import { Box, Button, ButtonGroup, Center, Card, Flex, Link, CardHeader, CardBody, CardFooter} from "@chakra-ui/react";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Talvi K. Porftolio",
-  description: "Whatever really",
-}
 
 export default function RootLayout({
   children,
@@ -22,11 +16,15 @@ export default function RootLayout({
       justifyContent="center"
       align="center"
       height="80%">
+        <Box
+        p="3"
+        width="570px"
+        borderRadius='20'
+        bg="blackAlpha.200">
       <Providers>
-            <Center>
                 {children}
-              </Center>
       </Providers>
+      </Box>
       </Flex>
       </body>
     </html>

@@ -1,10 +1,11 @@
 "use client"
-import { Card, CardBody, Box, Button, HStack, Icon, Spacer, Stat, StatLabel, StatHelpText, Flex, Wrap, WrapItem, Text} from "@chakra-ui/react";
+import { Card, CardBody, Box, Button, HStack, Icon, Link, Spacer, Stat, StatLabel, StatHelpText, Flex, Wrap, WrapItem, Text} from "@chakra-ui/react";
 import { DiHtml5, DiReact, DiCss3, DiGithubBadge } from "react-icons/di";
 import { TbBrandNextjs, TbCode} from "react-icons/tb";
 import { RiJavascriptLine } from "react-icons/ri";
 import { IoMdDownload, IoMdPerson  } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
+import About from "./about/page";
 
 export default function Home() {
   return (
@@ -41,8 +42,10 @@ export default function Home() {
             margin="auto"
             p="2"
             _hover={{ bg:"whiteAlpha.200"}}>
+              <Link href="./about">
               <Icon as={IoMdPerson} boxSize="14"/>
               <Text fontSize="sm" textAlign="center"> About Me </Text>
+              </Link>
               </Box>
             </CardBody>
         </Card>
@@ -61,8 +64,10 @@ export default function Home() {
             margin="auto"
             p="2"
             _hover={{ bg:"whiteAlpha.200"}}>
+            <Link href="./contact">
             <Icon as={MdOutlineEmail} boxSize="14"/>
             <Text fontSize="sm" textAlign="center" marginTop="-2"> Contact Me</Text>
+            </Link>
             </Box>
             </CardBody>
         </Card>
@@ -101,8 +106,10 @@ export default function Home() {
             margin="auto"
             p="2"
             _hover={{ bg:"whiteAlpha.200"}}>
+            <Link href="https://github.com/TalvenlapsiDot" isExternal>
             <Icon as={TbCode} boxSize="12"/>
             <Text textAlign="center" fontSize="sm"> Projects </Text>
+            </Link>
             </Box>
             </CardBody>
         </Card>
