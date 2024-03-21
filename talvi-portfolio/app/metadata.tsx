@@ -2,5 +2,5 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title: "Talvi K. Porftolio",
-    description: "Whatever really",
+    description: "Portfolio to display whatever I've worked on.",
   }

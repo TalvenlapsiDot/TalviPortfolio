@@ -8,12 +8,6 @@ export default function Contact() {
         <Link href="./">
             <IconButton aria-label="Go Back" icon={<ArrowLeftIcon/>} size="sm" zIndex="3" position="relative" top="12" left="30"/>
         </Link>
-        <Box
-            p="3"
-            maxWidth="80%"
-            minWidth="570px"
-            borderRadius='20'
-            bg="blackAlpha.200">
             <Flex
                 direction="column"
                 justifyContent="center"
@@ -30,7 +24,6 @@ export default function Contact() {
             </CardBody>
             </Card>
             </Flex>
-        </Box>
     </>
     )
 }

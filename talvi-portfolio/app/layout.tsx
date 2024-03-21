@@ -1,7 +1,7 @@
 "use client"
 import "./globals.css";
 import { Providers } from "./providers";
-import { Box, Button, ButtonGroup, Center, Card, Flex, Link, CardHeader, CardBody, CardFooter} from "@chakra-ui/react";
+import { Box, Flex} from "@chakra-ui/react";
 
 export default function RootLayout({
   children,
@@ -11,21 +11,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Flex
-      direction="column"
-      justifyContent="center"
-      align="center"
-      height="80%">
-        <Box
-        p="3"
-        width="570px"
-        borderRadius='20'
-        bg="blackAlpha.200">
       <Providers>
+        <Flex
+          direction="column"
+          justifyContent="center"
+          align="center"
+          height="80%">
+            <Box
+              p="3"
+              width="570px"
+              borderRadius='20'
+              bg="blackAlpha.200">
                 {children}
-      </Providers>
-      </Box>
-      </Flex>
+            </Box>
+          </Flex>
+          </Providers>
       </body>
     </html>
   );

@@ -5,16 +5,10 @@ import { TbBrandNextjs, TbCode} from "react-icons/tb";
 import { RiJavascriptLine } from "react-icons/ri";
 import { IoMdDownload, IoMdPerson  } from "react-icons/io";
 import { MdOutlineEmail } from "react-icons/md";
-import About from "./about/page";
 
 export default function Home() {
   return (
   <>
-    <Box
-      p="3"
-      maxWidth="570px"
-      borderRadius='20'
-      bg="blackAlpha.200">
       <Wrap spacing='10px' align="center" marginLeft="2">
         <Card
           variant="elevated"
@@ -151,7 +145,6 @@ export default function Home() {
             </CardBody>
         </Card>
     </Wrap>
-  </Box>
   </>
   );
 }
