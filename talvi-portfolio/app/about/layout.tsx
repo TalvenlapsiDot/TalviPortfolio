@@ -16,8 +16,7 @@ export default function AboutLayout() {
                 icon={<ArrowLeftIcon/>}
                 size="sm"
                 zIndex="3"
-                position="relative"
-                top="-47"
+                top="-230"
                 left="4"
                 variant="link"
                 textColor="white"/>
